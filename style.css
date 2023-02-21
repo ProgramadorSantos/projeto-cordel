@@ -1,31 +1,115 @@
 @charset "UTF8";
 
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patua+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Gloria+Hallelujah&display=swap');
+
+:root {
+    --fonte1:'Gloria Hallelujah', cursive;
+    --fonte2:'Carter One', cursive;
+    
+}
+
+
+
+
+
+
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
+    
     background-color: lightslategray;
 }
 header {
-    height: 40vh;
+    height: 50vh;
     color: white;
     background-color: black;
 }
 header > h1 {
+    font-family: var(--fonte1);
     padding-top: 40px;
     text-align: center;
-    font-size: 8vw;
+    font-size: 7vw;
 }
 header > p {
     padding-bottom: 10px;
-    font-size: 16px;
     text-align: center;
     
 }
 a {
     color: white;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section {
+    font-family: var(--fonte2);
+    padding-top: 6vh;
+    padding-bottom: 10vh;
+    line-height: 1em;
+    font-size: 7vh;
+    line-height: 1.7em;
+
+    
+}
+section > p {
+    margin-bottom: 70px;   
+    display: inline-block;
+}
+.normal {
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    min-height: 50vw;
+    padding-top: 4vw;
+}
+.imagem1 {
+    padding: 30px;
+    
+    min-height: 50vw;
+    background-color: aquamarine;
+    background-image: url(imagens/background002.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: right top;
+
+}
+.imagem2 {
+    padding: 30px;
+    
+    color: white;
+    min-height: 50vw;
+    background-color: aquamarine;
+    background-image: url(imagens/background001.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: right top;
+    
+    
+}
+section.imagem1  P {
+    max-width: 700px;
+    color: rgb(243, 240, 240);
+    background-color: rgba(0, 0, 0, 0.400);
+    border-radius: 15px;
+    padding: 10px;
+}
+section.imagem2 p {
+    max-width: 700px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 15px;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    color: white;
+    min-height: 40px;
+    background-color: black;
+    padding: 5px;
 }
